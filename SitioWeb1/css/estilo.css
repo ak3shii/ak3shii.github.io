@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+.main-nav{
+    width: 100%;
+    position: relative;
+    z-index: 2000;
+    padding: 10px;
+}
+.icon-menu{
+    display: block;
+    color: white;
+    /*border: 1px solid white;
+    border-radius: 3px;*/
+    width: 40px;
+    height: 40px;
+    line-height: 45px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5em;
+    margin-left: 220px;
+}
+.menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 75%;
+    background: rgba(0,0,0,.80);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: height .2s linear;
+    margin-left: 200px
+    
+}
+
+.menu__link {
+    display: block;
+    padding: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu__link:hover {
+    background: rgba(60.78,60.78,60.78,.70);
+}
+.menu__link--select {
+    background: rgba(60.78,60.78,60.78,.70);
+}
+
+.mostrar{
+    height: 280px;
+}
+.container{
+    width: 100%;
+    margin: auto;
+    
+}
+
+.container--flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    margin-left: 220px;    
+}
+
+.column{
+ width: 100%;   
+}
+
+.main-header{
+    width: 100%;
+}
+
+.banner{
+    margin-top: -145px;
+    position: relative;
+    z-index: -1000;
+}
+.ingreso{
+    margin-top: -300px;
+    position: relative;
+    margin-left: 310px;
+    background: rgba(0,0,0,.75);
+    width: 60%;
+    height: 200px;
+    color: white;
+}
+
+.ingreso__margin{
+    margin-left: 15px;    
+}
+
+.banner:before{
+    content: '';
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 1000;
+    top: 0;
+}
+
+.banner__img{
+    width: 75%;
+    height: 500px;
+    margin-left: 200px;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.main{
+    margin-top: -300px;
+    position: relative;
+    margin-left: 310px;
+    background: rgba(0,0,0,.90);
+    width: 60%;
+    height: 200px;
+    color: white;
+}
+.main__examen{
+    margin-top: -300px;
+    position: relative;
+    margin-left: 310px;
+    background: rgba(0,0,0,.90);
+    width: 60%;
+    height: 250px;
+    color: white;
+}

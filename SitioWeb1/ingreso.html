@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/ingreso.css">
+    <link href="https://file.myfontastic.com/uo37suJiJG2mwZHmeyovLG/icons.css" rel="stylesheet">
+    <script src="js/validar.js"></script>
+</head>
+<body style="background-color: gray">
+   <header class="main-header">
+       <div class="title">
+           <h1 style="color: white"> Ingreso</h1>
+       </div>
+       
+   </header>
+   
+   <nav class="main-nav">
+           <div class="container container--flex col-md-4">
+               <span class="icon-menu" id="btnmenu">&nbsp;&nbsp;&nbsp;Menu</span>
+           <ul class="menu" id="menu">
+               <li class="menu__item"><a href="index.html" class="menu__link ">Inicio</a></li>
+               <li class="menu__item"><a href="ingreso.html" class="menu__link menu__link--select">Ingreso</a></li>
+               <li class="menu__item"><a href="examen.html" class="menu__link">Examen</a></li>
+               <li class="menu__item"><a href="registro.tml" class="menu__link">Registro</a>
+               </li>
+           </ul>
+           </div>
+       </nav>
+       <section class="banner">
+           <img src="img/ingreso.jpg" alt="" class="banner__img">
+       </section> 
+        
+        <section class="ingreso">
+            <h2 class="ingreso__margin">Ingrese los siguientes datos</h2>
+            
+            <div class="container container__flex">
+                <form action="" method= "post" class="formulario column column--50" onsubmit="return validar();">
+                    
+                    <div class="col-md-3 ingreso__margin">
+                        <label for="" class="formulario__label">Nombre</label>
+                        <input type="text" id="nombre" class="formulario__input-txt" name="nombre" >
+                        <label for="" class="formulario__label">Apellido</label>
+                        <input type="text" id="apellido" class="formulario__input-txt" name="apellido" >
+                        <label for="" class="formulario__label">Direccion</label>
+                        <input type="text" id="direccion" class="formulario__input-txt" name="direccion" >
+                    
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="col-md 5 ingreso__margin">
+                        <label for="" class="formulario__label">Telefono</label>
+                        <input type="number" id="telefono" class="formulario__input-txt" name="telefono" >
+                        <label for="" class="formulario__label">Email</label>
+                        <input type="email" id="email" class="formulario__input-txt" name="email" >
+                        <input type="submit" class="btn formulario__btn" value="Enviar" style="margin-left: 200px">
+                    </div>
+                    
+                    
+                    
+                </form>
+            </div>
+        </section>
+    <script src="js/menu.js"></script>
+</body>
+</html>
